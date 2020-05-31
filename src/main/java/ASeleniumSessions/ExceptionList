@@ -1,0 +1,11 @@
+1- Exception in thread "main" org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+
+the launched windows you already closed and you script is still running
+
+2- ElementNotInteractableException - On browser you are not able to interact with the exception
+
+3- NoSuchElementException -  	
+
+4- InvalidSessionException - if you are using the script afte driver.quit() or driver.close()
+
+Exception in thread "main" org.openqa.selenium.NoSuchWindowException: no such window: target window already closed

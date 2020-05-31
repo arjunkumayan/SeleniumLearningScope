@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="139692" started-at="2020-05-31T10:05:34Z" finished-at="2020-05-31T10:07:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="139692" started-at="2020-05-31T10:05:34Z" finished-at="2020-05-31T10:07:54Z">
+      <class name="ASeleniumSessions.LinksVerificationTest">
+        <test-method status="PASS" signature="verifyBrokenLinsTest()[pri:0, instance:ASeleniumSessions.LinksVerificationTest@3bfdc050]" name="verifyBrokenLinsTest" duration-ms="139665" started-at="2020-05-31T10:05:34Z" finished-at="2020-05-31T10:07:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokenLinsTest -->
+      </class> <!-- ASeleniumSessions.LinksVerificationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

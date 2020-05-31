@@ -1,0 +1,99 @@
+Selenium 01 -
+
+WebDriverBasics
+close and quit
+SessionId concept
+
+
+Selenium 02 - 
+Navigation
+Locators
+
+Selenium 03 -
+Alert popup - java script
+File Upload
+window handles
+Case1
+Case 2
+
+Selenium 04 -
+
+FileElements concept
+totallinks
+total images
+getTextFieldValue
+
+GetText() vs getAttribute("")
+findElements concept
+links
+image count
+attribute values
+
+Selenium 05 -
+
+DropDown handle
+dropdown - utility
+getoptions()
+Select class
+
+
+Selenium 06 -
+FrameHandle14 ( Frame url -http://www.londonfreelance.org/courses/frames/index.html )
+AuthPopup14 (the-internet.herokuapp.com/basic_auth)
+ActionsConcept( http://mrbool.com)
+DragAndDropConcept15 (https://jqueryui.com/droppable)
+RightClickConcept16 (https://swisnl.github.io/jQuery-contextMenu/demo.html)
+RightClickConcept17   (https://swisnl.github.io/jQuery-contextMenu/demo.html)
+
+Right Click - https://swisnl.github.io/jQuery-contextMenu/demo.html
+
+
+Selenium 07 -
+
+Action class sendkeys
+Utility methods
+generic methods
+Screenshot
+Exception handling in generic methods
+
+Selenium 08 -
+
+Synchronization in selenium
+Implicit wait
+explicit wait
+dynamic wait
+HubSpotLoginPage18
+
+Selenium-09
+
+Jquery Dropdown
+
+https://www.jqueryscript.net/demo/Drop-Down-Combo-Tree/
+
+selenium-10
+
+custom xpath
+
+
+
+
+Need to practice-
+
+Jquery dropdown
+Calender handling
+dropdown verification
+Action class
+select class example
+calender handling example
+
+WebTable - based on pattern
+
+Practice xpath
+
+webtable- Cricinfo
+classic crm table
+app hubspot contact
+how to creaate your own wait
+
+
+
