@@ -23,6 +23,7 @@ public class LoginTest {
 	By login = By.id("loginBtn");
 	By signup = By.linkText("Sign up");
 	By homePageHeader = By.className("private-page__title");
+	// This is testing comment
 
 	@BeforeTest
 	@Parameters({ "url", "browser" })
