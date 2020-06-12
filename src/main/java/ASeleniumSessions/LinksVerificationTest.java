@@ -30,7 +30,7 @@ public class LinksVerificationTest {
 				
 				System.out.println(linkURL+ "--- is valid "+httpUrlConnection.getResponseMessage());
 			}
-			else if(httpUrlConnection.getResponseCode()== httpUrlConnection.HTTP_NOT_FOUND ) {
+			else if(httpUrlConnection.getResponseCode()== httpUrlConnection.HTTP_NOT_FOUND ) { // 404 - HTTP Response codes 
 				System.out.println(linkURL+ "--- is Invalid "+httpUrlConnection.getResponseMessage());
 				
 			}

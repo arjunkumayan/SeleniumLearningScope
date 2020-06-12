@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="139692" started-at="2020-05-31T10:05:34Z" finished-at="2020-05-31T10:07:54Z">
+  <suite name="Default suite" duration-ms="5418" started-at="2020-06-04T10:22:21Z" finished-at="2020-06-04T10:22:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="139692" started-at="2020-05-31T10:05:34Z" finished-at="2020-05-31T10:07:54Z">
-      <class name="ASeleniumSessions.LinksVerificationTest">
-        <test-method status="PASS" signature="verifyBrokenLinsTest()[pri:0, instance:ASeleniumSessions.LinksVerificationTest@3bfdc050]" name="verifyBrokenLinsTest" duration-ms="139665" started-at="2020-05-31T10:05:34Z" finished-at="2020-05-31T10:07:54Z">
+    <test name="Default test" duration-ms="5418" started-at="2020-06-04T10:22:21Z" finished-at="2020-06-04T10:22:26Z">
+      <class name="WebElements.IllegalArgumentExceptionExample">
+        <test-method status="PASS" signature="googleSearch3()[pri:0, instance:WebElements.IllegalArgumentExceptionExample@91161c7]" name="googleSearch3" duration-ms="5383" started-at="2020-06-04T10:22:21Z" finished-at="2020-06-04T10:22:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyBrokenLinsTest -->
-      </class> <!-- ASeleniumSessions.LinksVerificationTest -->
+        </test-method> <!-- googleSearch3 -->
+      </class> <!-- WebElements.IllegalArgumentExceptionExample -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

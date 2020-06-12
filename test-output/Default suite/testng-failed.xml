@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="JavaScript.AlertsWindow">
+      <class name="WebElements.IllegalArgumentExceptionExample">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="testPrompt"/>
+          <include name="googleSearch2"/>
+          <include name="googleSearch"/>
         </methods>
-      </class> <!-- JavaScript.AlertsWindow -->
+      </class> <!-- WebElements.IllegalArgumentExceptionExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
