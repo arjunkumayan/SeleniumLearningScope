@@ -38,7 +38,7 @@ public class DropDownHandle11 {
 		//selectValueFromDropdown(month,"May");
 		//selectValueFromDropdown(year,"1995");
 		
-		//doselectValueByIndex(day, 8);
+		//doselectValueByIndex(day, 8); 
 		//doselectValueByIndex(month, 5);
 		//doselectValueByIndex(year, 9);
 		
@@ -71,5 +71,12 @@ public class DropDownHandle11 {
 		select.selectByValue(value);
 	}
 	
+	
+	public static void selectValueByIndex(WebElement element,String value,int index) {
+		Select select = new Select(element);
+		select.selectByIndex(index);
+		select.selectByVisibleText(value);
+		select.selectByValue(value);
+	}
 
 }

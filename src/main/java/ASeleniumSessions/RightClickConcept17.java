@@ -60,6 +60,7 @@ public class RightClickConcept17 {
 		
 		System.out.println("Assertion");
 		Assert.assertTrue(getOptions(driver, rightClickOption).equals(expectedList()));
+		Assert.assertEquals(getOptions(driver, rightClickOption), expectedList());
 		
 	}
 	

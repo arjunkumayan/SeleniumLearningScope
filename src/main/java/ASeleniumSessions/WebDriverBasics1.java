@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class WebDriverBasics1 {
 	WebDriver driver;
 
@@ -17,7 +19,8 @@ public class WebDriverBasics1 {
 		//WebDriver driver = new FirefoxDriver();
 		
 		//chrome
-		System.setProperty("webdriver.chrome.driver", projectPath+"/src/test/resources/drivers/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", projectPath+"/src/test/resources/drivers/chromedriver.exe");
+		 WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver(); //1. open the browser
 		//ChromeDriver: chrome on WINDOWS (5db1582f799eb99856ac16b46dd174d6)
 		
@@ -35,7 +38,7 @@ public class WebDriverBasics1 {
 		
 		driver.get("https://www.google.com"); //2. launch the browser
 		
-		                                            //ChromeDriver: chrome on WINDOWS (5db1582f799eb99856ac16b46dd174d6)
+	  //ChromeDriver: chrome on WINDOWS (5db1582f799eb99856ac16b46dd174d6)
 		
 		String title = driver.getTitle(); //3. get the title
 		System.out.println(title);
@@ -50,8 +53,8 @@ public class WebDriverBasics1 {
 			System.out.println("in-correct title");
 		}
 		
-		System.out.println(driver.getCurrentUrl());
-		System.out.println(driver.getPageSource());
+	System.out.println(driver.getCurrentUrl());
+	//	System.out.println(driver.getPageSource());
 		
 		                                   //ChromeDriver: chrome on WINDOWS (a661f1550d8b41ddb6c8f59af0d01e39)
 		                                    //driver.quit(); //ChromeDriver: chrome on WINDOWS (null) - session id becomes null

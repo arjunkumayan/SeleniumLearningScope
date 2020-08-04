@@ -19,7 +19,7 @@ public class ReadExcelDataInListOfMap {
 	// Data in List of Map
 	public static List<LinkedHashMap<String, String>> getExcelDataAsMap(String ExcelFileName, String sheetName)
 	{
-		List<LinkedHashMap<String, String>> dataList = new ArrayList<>();
+		List<LinkedHashMap<String, String>> dataList = new ArrayList<LinkedHashMap<String, String>>();
 		
 		String fileName = "./src/test/resources/testData/"+ExcelFileName+".xlsx";
 		
@@ -48,7 +48,7 @@ public class ReadExcelDataInListOfMap {
 		
 		for(int i = 1; i<countOfDataSet ; i++)
 		{
-			LinkedHashMap<String,String> data =  new LinkedHashMap<>();
+			LinkedHashMap<String,String> data =  new LinkedHashMap<String, String>();
 			
 			for(int j=1; j<rowCount ; j++)
 			{

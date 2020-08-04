@@ -26,9 +26,11 @@ public class DragAndDropConcept15 {
 		WebElement targetElement = driver.findElement(By.id("droppable"));
 		
 		action.clickAndHold(sourceElement).moveToElement(targetElement).release().build().perform();
+//		action.dragAndDrop(sourceElement, targetElement).build().perform();
+//		action.clickAndHold(sourceElement).moveToElement(targetElement).release().build().perform();
+//		action.clickAndHold(sourceElement).release(targetElement).build().perform();
 		
-		
-		
+	   
 		
 		
 	}

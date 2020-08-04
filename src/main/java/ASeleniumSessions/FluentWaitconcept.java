@@ -5,16 +5,33 @@ import java.util.NoSuchElementException;
 import java.util.function.Function;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class FluentWaitconcept {
+	
+	
+	public static void javaScriptSendKeys(WebDriver driver,By locator, String value) {
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		WebElement element = driver.findElement(locator);
+		js.executeScript("arguments[0].value='"+value+"'",element );
+		
+		//js.executeScript("arguments[0].click();", element);
+		//js.executeScript("arguments[0].scrollIntoView(true);", element);
+		//js.executeScript("window.scrollTo(0,document.body.height)");
+		//js.executeScript("window.scrollBy(0,600)");
+		
+		
+	}
 
 	public static void main(String[] args) {
 
@@ -36,10 +53,11 @@ public class FluentWaitconcept {
 		
 		waitForElementFluentWait(driver, username).sendKeys("arjunkumayan18@gmail.com");;
 		
-		driver.findElement(password).sendKeys("Defence@5050");
+		//driver.findElement(password).sendKeys("Defence@5050");
 		
-		driver.findElement(LoginButton).click();
+		//driver.findElement(LoginButton).click();
 		
+		javaScriptSendKeys(driver, password, "defencccc");
 		
 		
 				
@@ -47,7 +65,16 @@ public class FluentWaitconcept {
 	
 	// when to use - to handle ajax components  - without refreshing the entire page you are just updating the section of code
 	
-	
+	@Test
+	public void checkJS() {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver =  new ChromeDriver();
+		
+		driver.get("https://www.google.com/");
+		By search = By.name("q");
+		WebElement ele = driver.findElement(By.name("q"));
+		javaScriptSendKeys(driver, search, "arjun");
+	}
 	
 	public static WebElement waitForElementFluentWait(WebDriver driver, final By locator)
 	{

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5418" started-at="2020-06-04T10:22:21Z" finished-at="2020-06-04T10:22:26Z">
+  <suite name="Default suite" duration-ms="13767" started-at="2020-08-02T07:15:00Z" finished-at="2020-08-02T07:15:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5418" started-at="2020-06-04T10:22:21Z" finished-at="2020-06-04T10:22:26Z">
-      <class name="WebElements.IllegalArgumentExceptionExample">
-        <test-method status="PASS" signature="googleSearch3()[pri:0, instance:WebElements.IllegalArgumentExceptionExample@91161c7]" name="googleSearch3" duration-ms="5383" started-at="2020-06-04T10:22:21Z" finished-at="2020-06-04T10:22:26Z">
+    <test name="Default test" duration-ms="13767" started-at="2020-08-02T07:15:00Z" finished-at="2020-08-02T07:15:14Z">
+      <class name="NinjaSelenium.FireFoxProfileDemo">
+        <test-method status="PASS" signature="testFireFox()[pri:0, instance:NinjaSelenium.FireFoxProfileDemo@6d4b1c02]" name="testFireFox" duration-ms="13739" started-at="2020-08-02T07:15:00Z" finished-at="2020-08-02T07:15:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- googleSearch3 -->
-      </class> <!-- WebElements.IllegalArgumentExceptionExample -->
+        </test-method> <!-- testFireFox -->
+      </class> <!-- NinjaSelenium.FireFoxProfileDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -22,7 +22,7 @@ public class ExcelUtilWithList {
 
 	public static List<String> getTestData(String sheetName)
 	{
-		List<String> dataList = new ArrayList<>();
+		List<String> dataList = new ArrayList<String>();
 		
 		try {
 			FileInputStream ip = new FileInputStream(TESTDATA_SHEET_PATH);

@@ -23,7 +23,7 @@ public class ReadExcelDataInMapAndAddToListOFMap {
 	           Sheet sheet = wb.getSheet(sheetName);
 	           
 	           // Initialized a empty list which retain order
-	           List<LinkedHashMap<String,String>> dataList = new ArrayList<>();
+	           List<LinkedHashMap<String,String>> dataList = new ArrayList<LinkedHashMap<String, String>>();
 	           
 	           // Get data set count which will be equal to cell counts of any row
 	           
@@ -36,7 +36,7 @@ public class ReadExcelDataInMapAndAddToListOFMap {
 	          {
 	        	  // Create a map to store each data set individually
 	        	  
-	        	  LinkedHashMap<String,String> data = new LinkedHashMap<>();
+	        	  LinkedHashMap<String,String> data = new LinkedHashMap<String, String>();
 	        	  // Get the row i.e field names count
 	        	  
 	        	  int rowCount =  sheet.getPhysicalNumberOfRows();

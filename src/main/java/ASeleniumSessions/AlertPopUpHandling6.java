@@ -17,7 +17,7 @@ public class AlertPopUpHandling6 {
 		// Alerts- popup - special java script alerts 
 		// you can write your own alert - go to console and write alert("write your message"); - enter press button
 		
-		// Alert are not webelements - can not help with any locaators - this is an alert and even you can inspect it
+		// Alert are not webelements - can not help with any locators - this is an alert and even you can inspect it
 		
 		// alert interface - only responsible for java script popup
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
@@ -27,6 +27,10 @@ public class AlertPopUpHandling6 {
 		// to handle the pop up we have to switch the page to pop up
 		Thread.sleep(5000);
 		Alert  alert = driver.switchTo().alert();
+		alert.accept();
+		alert.getText();
+		alert.sendKeys(" ");
+		
 		String text = alert.getText();
 		
 		if(text.equals("Please enter a valid user name"))

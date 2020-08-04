@@ -17,7 +17,7 @@ public class ExcelDataInMap {
 	public static LinkedHashMap<String, String> getExcelDataInMap(String excelfileName, String sheetName) throws EncryptedDocumentException, IOException
 	{
 		
-		LinkedHashMap<String,String> dataMap = new LinkedHashMap<>();
+		LinkedHashMap<String,String> dataMap = new LinkedHashMap<String,String>();
 		File file = new File("D:/Users/asingh6766/eclipse-workspace/SeleniumLearning/src/test/resources/testData/"+excelfileName+".xlsx");	
 		Workbook book = WorkbookFactory.create(file);
 		Sheet sheet = book.getSheet(sheetName);

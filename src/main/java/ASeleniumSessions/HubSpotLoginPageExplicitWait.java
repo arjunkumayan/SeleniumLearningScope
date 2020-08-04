@@ -35,6 +35,10 @@ public class HubSpotLoginPageExplicitWait {
 		WebDriverWait wait =  new WebDriverWait(driver,3);
 		wait.until(ExpectedConditions.presenceOfElementLocated(emaillD));
 		
+		WebDriverWait elementWait = new WebDriverWait(driver,4);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(loginBtn));
+		
+		
 		//Exception in thread "main" org.openqa.selenium.TimeoutException: Expected condition failed:
 		//waiting for presence of element located by: 
 		//By.id: username (tried for 3 second(s) with 500 milliseconds interval) 0.5 secs

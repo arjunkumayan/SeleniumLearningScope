@@ -15,7 +15,7 @@ public class ReadExcelDataInMap {
 
 	public static LinkedHashMap<String, String> getExcelDataInMap(String excelfileName, String sheetName)
 	{
-		LinkedHashMap<String, String> data = new LinkedHashMap<>();
+		LinkedHashMap<String, String> data = new LinkedHashMap<String, String>();
 		
 		Workbook workbook = null;
 		File file = new File("./src/test/resources/testData/"+excelfileName+".xlsx");

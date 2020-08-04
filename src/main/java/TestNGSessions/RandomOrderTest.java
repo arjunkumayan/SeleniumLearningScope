@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 @Listeners(TestOrderPriorityBased.class)
 public class RandomOrderTest {
-	@Test(priority=1)
+	@Test
 	public void Test1() {
 		System.out.println("Here in test 1.");
 	}
@@ -15,17 +15,17 @@ public class RandomOrderTest {
 		System.out.println("Here in test 2.");
 	}
 
-	@Test()
+	@Test
 	public void Test3() {
 		System.out.println("Here in test 3.");
 	}
 
-	@Test(priority=1)
+	@Test
 	public void Test4() {
 		System.out.println("Here in test 4.");
 	}
 
-	@Test()
+	@Test
 	public void Test5() {
 		System.out.println("Here in test 5.");
 	}

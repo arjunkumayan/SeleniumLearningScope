@@ -10,6 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -23,7 +24,6 @@ public class ScreenShotConcept17 {
 		
 		driver.get("https://app.hubspot.com");
 		
-		
 		Thread.sleep(5000);
 		
 		WebElement email = driver.findElement(By.id("username"));
@@ -36,7 +36,7 @@ public class ScreenShotConcept17 {
 		// getScreenshot - method
 		// TakesScreenshot interface
 		takePageScreenShot(driver, "fullPage");
-		
+		takePageScrnshot(driver, "test1");
 		/*
 		 * taleElementScreenShot(email,"username");
 		 * taleElementScreenShot(pwd,"password");
@@ -50,6 +50,16 @@ public class ScreenShotConcept17 {
 		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(srcFile, new File("./target/screenshots/"+fileName+".png"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void takePageScrnshot(WebDriver driver, String filename) {
+		File file = new File(filename);
+		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(srcFile, new File("./target/screenshots/" + filename + ".png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

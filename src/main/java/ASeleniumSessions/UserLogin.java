@@ -53,4 +53,21 @@ public class UserLogin {
 		 userMap.put("doctor", "test12345");
 		 return userMap;
 	}
+	
+	public static void doHubSpotLogin(WebDriver driver, By locator, Map<String,String> userMap, String key) {
+		
+		driver.findElement(locator).sendKeys(userMap.get(key).split("_")[0]);
+		driver.findElement(locator).sendKeys(userMap.get(key).split("_")[1]);
+		
+	}
+	
+	public static Map<String, String> addUserCredentials() {
+		Map<String,String> userMap = new HashMap<String, String>();
+		userMap.put("ADMIN", "arjun@gmail.com_test123");
+		userMap.put("Security", "secu@gmail.com_get123");
+		return userMap;
+		
+	}
+	
+	
 }

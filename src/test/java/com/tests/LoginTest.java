@@ -71,6 +71,24 @@ public class LoginTest {
 	@AfterTest
 	public void tearDown() {
 		driver.quit();
+		
+		driver.get("");
+		driver.getCurrentUrl();
+		driver.getPageSource();
+		driver.getTitle();
+		driver.getWindowHandle();
+		driver.getWindowHandles();
+		driver.findElement(By.id(""));
+		driver.findElement(By.xpath(""));
+		driver.findElements(By.id(""));
+		
+		driver.switchTo();
+		driver.manage();
+		driver.navigate();
+		driver.manage().timeouts();
+		driver.manage().window();
+		
+				
 	}
 
 }

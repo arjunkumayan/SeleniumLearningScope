@@ -14,7 +14,6 @@ public class WebDriverManagerConcept5 {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver =  new ChromeDriver();
 		
-		
 		driver.get("https://www.amazon.in");
 		
 		System.out.println(driver.getTitle());
