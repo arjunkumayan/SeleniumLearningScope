@@ -26,8 +26,7 @@ public class TotalPageLinksExample8 {
 	
 		for(int i=0 ; i<linksFooter.size() ; i++)
 		{
-		System.out.println(linksFooter.get(i).getText());
-			
+		System.out.println(linksFooter.get(i).getText());			
 		}
 	}
 

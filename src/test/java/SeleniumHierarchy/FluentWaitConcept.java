@@ -69,15 +69,33 @@ public class FluentWaitConcept {
 		
 	}
 	
-	public static WebElement waitForFluentWait(WebDriver driver, By locator, long seconds) {
+	public static WebElement fluentWaitCheck(WebDriver driver, By locator, long seconds) {		
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+				.pollingEvery(Duration.ofSeconds(seconds))
+				.withTimeout(Duration.ofSeconds(seconds))
+				.ignoring(NoSuchElementException.class);	
 		
+	return	wait.until(ExpectedConditions.visibilityOfElementLocated(locator));	
+	
+	}
+	
+	public static WebElement ExplicitWaitConcept(WebDriver driver, By locator, long seconds) {
+		
+		WebDriverWait wait = new WebDriverWait(driver, seconds);
+		
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		
+	}
+	public static WebElement waitForFluentWait(WebDriver driver, By locator, long seconds) {		
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
 				.pollingEvery(Duration.ofSeconds(seconds))
 				.withTimeout(Duration.ofSeconds(seconds))
 				.ignoring(NoSuchElementException.class);
-	return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));		
 	
-		
+	
+	
+	
 	}
 	
 	public static WebElement waitForFluentWaitCheck(WebDriver driver, By locator, long seconds, long timeout) {
@@ -88,9 +106,7 @@ public class FluentWaitConcept {
 				.withTimeout(Duration.ofSeconds(timeout))
 				.ignoring(NoSuchElementException.class);
 		
-		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-		 
-		
+		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));		
 		
 	}
 	
@@ -105,24 +121,41 @@ public class FluentWaitConcept {
 	}
 	
 	public static WebElement waitForFluentWaitTest(WebDriver driver,By locator,long secs) {
-		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).pollingEvery(Duration.ofSeconds(secs))
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+				.pollingEvery(Duration.ofSeconds(secs))
 				.withTimeout(Duration.ofSeconds(secs))
 				.ignoring(Exception.class);
 		
 		 WebElement element = wait.until(new Function<WebDriver, WebElement>() {
 
 			@Override
+			public WebElement apply(WebDriver driver) {				
+				return driver.findElement(locator);
+			}			
+		});
+		 
+		 return element;
+		 
+	}
+	
+	public static WebElement waitForFluentWait1(WebDriver driver, By locator, long secs) {
+		
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+				.pollingEvery(Duration.ofSeconds(secs))
+				.withTimeout(Duration.ofSeconds(secs))
+				.ignoring(NoSuchElementException.class);
+		
+		WebElement element = wait.until(new Function<WebDriver, WebElement>() {
+
+			@Override
 			public WebElement apply(WebDriver driver) {
 				
 				return driver.findElement(locator);
 			}
-			
-			
 		});
-		 
-		 return element;
+		return element;
+				
 	}
-	
 	
 	public static WebElement waitForFluent(WebDriver driver, By locator, long timeout, long seconds) {
 		

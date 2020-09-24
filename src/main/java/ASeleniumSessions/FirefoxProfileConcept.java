@@ -23,9 +23,8 @@ public class FirefoxProfileConcept {
 			
 		 	FirefoxOptions option = new FirefoxOptions();
 			option.setProfile(profile);
-			
-			
-			 WebDriver driver  = new FirefoxDriver(option);
+						
+			WebDriver driver  = new FirefoxDriver(option);
 			
 			driver.get("https://www.axisbank.com/");
 		

@@ -70,6 +70,7 @@ public class KeyPressDemo2 {
 		
 		WebElement password =driver.findElement(By.id("password"));
 		password.sendKeys("temp123");
+		
 		password.sendKeys(Keys.chord(Keys.CONTROL,"a"));
 		
 		String selectAll = Keys.chord(Keys.CONTROL,"a");

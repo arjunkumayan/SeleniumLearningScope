@@ -34,8 +34,7 @@ public class CaptureTotalLinksText {
 		WebElement checkBoxElement = driver.findElement(checkBox);
 		String styleAttribute = checkBoxElement.getAttribute("style");
 		if(styleAttribute.contains("hidden")) {
-			System.out.println("Checkbox is not checked");
-			
+			System.out.println("Checkbox is not checked");			
 		}
 		WebElement selectDropdown = null;
 		WebElement check1= driver.findElement(By.xpath("//input[@type='checkbox']"));

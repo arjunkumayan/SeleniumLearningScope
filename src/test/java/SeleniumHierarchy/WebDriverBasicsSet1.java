@@ -35,11 +35,9 @@ public class WebDriverBasicsSet1 {
 		Options option = driver.manage();
 		option.addCookie(null);
 		option.deleteAllCookies();
-		
-		
+				
 		Navigation nav = driver.navigate();
-		
-		
+				
 		TargetLocator locator = driver.switchTo();
 		
 		

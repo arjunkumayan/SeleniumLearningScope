@@ -52,7 +52,7 @@ public class KeyPressDemo3 {
 		email.sendKeys("arjunkumaya@gmail.com");
 		action.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).build().perform();
 		Thread.sleep(2000);
-		
+				
 	}
 
 		

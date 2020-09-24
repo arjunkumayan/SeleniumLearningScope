@@ -39,7 +39,7 @@ public class NoSuchElementDemo {
 		 // 1. Timing Issue
 		/*
 		 * We are typing in emailField to do enter text but when selenium webdriver started doing sendkeys on email field
-		 * the page was not loaded, it was still moving, it was still rotatingm, it was not completely loaded and the email field
+		 * the page was not loaded, it was still moving, it was still rotating, it was not completely loaded and the email field
 		 * was not rendered thats why its fail to find it
 		 * 
 		 * how to solve this
@@ -103,6 +103,7 @@ public class NoSuchElementDemo {
 		
 		// if before switching to frame if you are trying to enter something or any operation of selenium webdriver then
 		// you will get the noSuchElementException
+		
 		
 
 	}

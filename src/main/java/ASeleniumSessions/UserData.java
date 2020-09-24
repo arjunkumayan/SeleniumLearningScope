@@ -2,7 +2,9 @@ package ASeleniumSessions;
 
 import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
 public class UserData {
 	
@@ -22,10 +24,33 @@ public class UserData {
     System.out.println(userMap.get("id")); 
     //System.out.println(userMap.get(0));
     
+    if(userMap.containsKey("id"))
+    {
+    	System.out.println(userMap.get("id"));
+       }
+    
+    if(userMap.containsValue("tom")) {
+    	System.out.println(userMap.get("tom"));
+    }
     System.out.println(userMap.size());
+    
+    Set<String> keys =userMap.keySet();
+    Iterator<String> itr = keys.iterator();
+    
+   while( itr.hasNext()) {
+	
+	   String id = itr.next();
+	   System.out.println(" ID === "+id);
+	   
+	   
+   }
+    for(String k:keys) {
+    	System.out.println(k);
+    }
     
 		for(Map.Entry m : userMap.entrySet())
 		{
+			
 			System.out.println(m.getKey()+ " "+ m.getValue());
 		}
 		

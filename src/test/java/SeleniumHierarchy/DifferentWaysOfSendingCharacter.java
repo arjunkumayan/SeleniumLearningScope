@@ -20,7 +20,7 @@ public class DifferentWaysOfSendingCharacter {
 		Thread.sleep(10000);
 		WebElement username= driver.findElement(By.id("username"));
 		WebElement password= driver.findElement(By.id("password"));
-	//1. String	
+	    //1. String	
 		String str = "pasword";
 	
 		//2. StringBuilder
@@ -33,8 +33,10 @@ public class DifferentWaysOfSendingCharacter {
 		
 	Boolean enabled = 	driver.findElement(By.id("loginBtn")).isEnabled();
 	System.out.println("Enabled= "+enabled);
-	Boolean displayed = 	driver.findElement(By.id("loginBtn")).isDisplayed();
+	
+	Boolean displayed = driver.findElement(By.id("loginBtn")).isDisplayed();
 	System.out.println("displayed = "+displayed);
+	
 	Boolean selected = 	driver.findElement(By.id("loginBtn")).isSelected();
 	System.out.println("selected = "+selected);
 	

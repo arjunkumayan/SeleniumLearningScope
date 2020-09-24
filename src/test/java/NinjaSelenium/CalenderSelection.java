@@ -64,8 +64,7 @@ public class CalenderSelection {
 		System.out.println("Size of total disabled items is: "+ disabledElements.size());
 		
 		for(WebElement disabled:disabledElements) {
-			System.out.println(disabled.getText());
-			
+			System.out.println(disabled.getText());			
 		}
 
 	}

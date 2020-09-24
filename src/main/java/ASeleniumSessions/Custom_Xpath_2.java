@@ -99,10 +99,6 @@ public class Custom_Xpath_2 {
 		 * driver.findElement(By.className("//input[@id='username']/../../../../..")).getAttribute("id");
 		 */
 		
-		
-		
-		
-		
 		WebDriverManager.chromedriver().setup();
 		 WebDriver driver = new ChromeDriver();
 		 

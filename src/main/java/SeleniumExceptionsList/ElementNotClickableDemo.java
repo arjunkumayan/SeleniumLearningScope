@@ -103,7 +103,7 @@ Command duration or timeout: 69 milliseconds
 	 * 
 	 */
 	
-	// so above this element <div class="globalHeader-UtilTop"> overlapping the actula element for click
+	// so above this element <div class="globalHeader-UtilTop"> overlapping the actual element for click
 	// There are multiple ways to handle this exception -
 	//1. try to maximize the window and check -
 	//2. JavaScriptExecutor  (JavascriptExecutor)driver.executeScript("arguments[0].click()",driver.findElement()); 

@@ -282,8 +282,7 @@ Adjacent sibling combinator(+) separates two CSS selectors and matches the secon
 		
 		
 		
-		
-	}	
+	}
 		
 
 }

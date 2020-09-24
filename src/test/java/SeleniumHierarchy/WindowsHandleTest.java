@@ -30,8 +30,7 @@ public class WindowsHandleTest {
 		driver.switchTo().window(child);
 		System.out.println("Switched to child window");
 		if(driver.getTitle().equals("PopupTest Friday July, 03 2020")) {
-			System.out.println("Child window Pass");
-			
+			System.out.println("Child window Pass");			
 		}
 		else {
 			System.out.println("fail");

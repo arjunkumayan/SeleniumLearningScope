@@ -19,6 +19,7 @@ public class HubSpotLoginPageExplicitWait {
 		driver.get("https://app.hubspot.com");
 		
 		WebDriverWait wait1 = new WebDriverWait(driver,20);
+		
 		wait1.until(ExpectedConditions.titleContains("HubSpot Login"));
 		
 		System.out.println(driver.getTitle());
